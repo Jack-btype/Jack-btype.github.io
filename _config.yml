@@ -10,7 +10,7 @@ manager: JackBtype
 #authors' information
 #use site.authors[page.author].name to access the author's name
 authors:
-  Mensu:
+  JackBtype:
     name: JackBtype
     email: qq1998800@163.com
     website: https://jack-btype.github.io
@@ -54,7 +54,7 @@ mathjax: true
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: ""
-sidebar-avatar: "https://jack-btype.github.io/img/avatar.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: "https://github.com/Jack-btype/Jack-btype.github.io/blob/master/img/avator.png?raw=true"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
