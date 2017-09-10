@@ -1,18 +1,18 @@
 # Site settings
-title: Mensu - 思考のかけら
-SEOTitle: Mensu - 思考のかけら | fragments of thought
-email: yxshw55@qq.com
-description: "Mensu's Blog"
+title: JackBtype - 思考のかけら
+SEOTitle: JackBtype - 思考のかけら | fragments of thought
+email: qq1998800@163.com
+description: "JackBtype's Blog"
 keyword: ""
-url: "https://mensu.github.io"              # your host, for absolute URL
+url: "https://Jack-btype.github.io"              # your host, for absolute URL
 baseurl: ""                            # for example, '/blog' if your blog hosted on 'host/blog'
-manager: Mensu
+manager: JackBtype
 
 #authors' information
 #use site.authors[page.author].name to access the author's name
 authors:
   Mensu:
-    name: Mensu
+    name: JackBtype
     email: yxshw55@qq.com
     website: https://mensu.github.io
     github: Mensu
@@ -22,16 +22,8 @@ authors:
 
 SNS:
   - site: github
-    username: Mensu
-    url: https://github.com/Mensu
-
-  - site: weibo
-    username: yxshw55
-    url: http://weibo.com/yxshw55
-
-  - site: twitter
-    username: mensuhamesu
-    url: https://twitter.com/mensuhamesu
+    username: Jack-btype
+    url: https://github.com/Jack-btype
 
 # Build settings
 gems: [jekyll-paginate]
@@ -48,9 +40,9 @@ kramdown:
 #disqus-username:
 
 # Duoshuo settings
-duoshuo-username: mensu
+# duoshuo-username: jackbtype
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo-share: false                     # set to false if you want to use Comment without Sharing
+# duoshuo-share: false                     # set to false if you want to use Comment without Sharing
 
 # Analytics settings
 # Baidu Analytics
@@ -66,7 +58,7 @@ mathjax: true
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: ""
-sidebar-avatar: "https://mensu.github.io/img/avatar.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: "https://jack-btype.github.io/img/avatar.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
