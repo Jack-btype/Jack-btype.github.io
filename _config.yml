@@ -1,6 +1,5 @@
 # Site settings
-title: JackBtype - 思考のかけら
-SEOTitle: JackBtype - 思考のかけら | fragments of thought
+title: JackBtype's Blog
 email: qq1998800@163.com
 description: "JackBtype's Blog"
 keyword: ""
@@ -13,13 +12,10 @@ manager: JackBtype
 authors:
   Mensu:
     name: JackBtype
-    email: yxshw55@qq.com
-    website: https://mensu.github.io
-    github: Mensu
-    weibo: yxshw55
-    twitter: mensuhamesu
-    QQ: 805495207
-
+    email: qq1998800@163.com
+    website: https://jack-btype.github.io
+    github: Jack-btype
+    
 SNS:
   - site: github
     username: Jack-btype
@@ -58,7 +54,7 @@ mathjax: true
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: ""
-sidebar-avatar: "https://jack-btype.github.io/img/avatar.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar:      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
