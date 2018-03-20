@@ -1,0 +1,338 @@
+@import "variables.less";
+@import "mixins.less";
+@import (inline) "./lib/bootstrap.min.css";
+@import (inline) "./lib/font-awesome.min.css";
+
+body {
+	.sans-serif();
+	font-size: 16px;
+	color: @gray-dark;
+	overflow-x : hidden;
+	// -webkit-tap-highlight-color: @brand-primary;  // on mobile
+}
+
+
+// -- Typography
+
+p {
+	margin: 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+	color: @gray-dark;
+	.sans-serif(1.1);
+	font-weight: bold;
+}
+h4 {
+  font-size: 21px;
+}
+a {
+	color: #337ab7;
+	&:hover,
+	&:focus {
+		color: @brand-primary;
+	}
+	img {
+		&:hover,
+		&:focus {
+			cursor: zoom-in;
+		}
+	}
+}
+
+blockquote {
+	color: @gray;
+	font-style: italic;
+	font-size: 0.95em;
+	margin: 20px 0 20px;
+	p {
+		margin: 0;
+	}
+}
+
+// Utils Style Class can be used in Markdown.
+small.img-hint {
+	display: block;
+	margin-top: -20px;
+	text-align: center;
+}
+br + small.img-hint {
+	margin-top: -40px;
+}
+img.shadow {
+	box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+}
+
+button, input {
+	outline: none;
+}
+
+:focus {
+	outline: none;
+}
+a:focus {
+	outline: none;
+}
+
+@media screen and (max-width: 768px) {
+	select {
+		appearance: none;
+		margin-top: 15px;
+		color: #337ab7;
+		border-color: #337ab7;
+		padding: 0em 0.4em;
+		background: white;
+	}
+}
+
+// override table style in bootstrap
+.table th,
+.table td {
+	border: 1px solid #eee !important;
+}
+
+hr.small {
+	max-width: 100px;
+	margin: 15px auto;
+	border-width: 4px;
+	border-color: white;
+}
+
+// add by Hux
+pre,
+.table-responsive {
+	// move forwards for a while even after user stops scrolling
+	overflow-scrolling: touch;
+}
+
+.anchorjs-link {
+	@media screen and (min-width: 800px) {
+		position: absolute;
+		color: #337ab7;
+		left: -0.75em;
+		font-size: 1.1em;
+		margin-top : -0.1em;
+	}
+}
+
+@import "top-nav.less";
+@import "backtotop.less";
+@import "intro-header.less";
+@import "post-preview.less";
+
+// In the post
+.post-container {
+	@media screen and (max-width: 500px) {
+		word-break: break-all;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 30px 0 10px;
+	}
+	.hn(@font-size) {
+		font-size: @font-size;
+		font-weight: 600;
+		color: gray;
+		& + p {
+			margin-top: 5px;
+		}
+	}
+	h5 {
+		.hn(19);
+	}
+	h6 {
+		.hn(16);
+	}
+	ul,
+	ol {
+		margin-bottom: 40px;
+	}
+	ol ol,
+	ol ul,
+	ul ol,
+	ul ul {
+		margin-bottom: 5px;
+	}
+	li {
+		p {
+			margin: 0;
+			margin-bottom: 5px;
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			line-height: 2;
+			margin-top: 20px;
+		}
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 1.5em auto 1.6em auto;
+	}
+}
+
+
+// Sections
+.section-heading {
+	font-size: 36px;
+	margin-top: 60px;
+	font-weight: 700;
+}
+
+.caption {
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+	font-style: italic;
+	margin: 0;
+	display: block;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+a.view-again {
+  text-decoration: none;
+  font-weight: normal;
+  color: black;
+}
+
+hr.hr-below-something {
+  visibility: hidden;
+  margin-top: 15px;
+}
+
+footer {
+	font-size: 20px;
+	padding: 50px 0 65px;
+	a {
+		color: #404040;
+    font-weight: bold;
+	}
+	.list-inline {
+		margin: 0;
+		padding: 0;
+	}
+	.copyright {
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 0;
+		a {
+			text-decoration: none;
+			.typical-link(#777);
+      // color: #777;
+			// &:hover,
+			// &:focus {
+			// 	color: @brand-primary;
+			// }
+		}
+		& > iframe {
+			margin-bottom: -5px;
+			margin-left: 2px;
+			width: 91px;
+			height: 20px;
+		}
+	}
+}
+
+// Button Styles
+.btn {
+	.sans-serif();
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	border-radius: 0;
+	padding: 15px 25px;
+}
+
+.btn-lg {
+	font-size: 16px;
+	padding: 25px 35px;
+}
+
+.btn-default {
+	&:hover,
+	&:focus {
+		background-color: @brand-primary;
+		border: 1px solid @brand-primary;
+		color: white;
+	}
+}
+
+// Pager Styling
+.pager {
+	position: relative;
+  z-index: 1;
+	margin: 20px 0 0;
+	padding: 0;
+
+	li {
+		& > a,
+		& > span {
+			.sans-serif();
+			text-transform: uppercase;
+			font-size: 13px;
+			font-weight: 800;
+			letter-spacing: 1px;
+			padding: 10px 15px;
+			background-color: white;
+			border-radius: 0;
+			@media only screen and (min-width: 768px) {
+				font-size: 14px;
+				padding: 15px 25px;
+			}
+		}
+
+		& > a {
+			color: @gray-dark;
+			&:hover,
+			&:focus {
+				color: white;
+			  background-color: @brand-primary;
+			  border: 1px solid @brand-primary;
+				& > span {
+					color: white; // ?
+				}
+			}
+		}
+	}
+
+	.disabled {
+		& > a,
+		& > a:hover,
+		& > a:focus,
+		& > span {
+			color: @gray;
+			background-color: @gray-dark;
+			cursor: not-allowed;
+		}
+	}
+}
+
+// -- Highlight Color Customization
+img::selection {
+	color: white;
+	background: transparent;
+}
+
+@import "tag.less";
+@import "sidebar.less";
+@import "side-catalog.less";
+@import "monokai-sublime.less";
+// @import "duoshuo-comment.less";
+@import "fullscreen.less";
