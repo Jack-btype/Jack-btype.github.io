@@ -1,9 +1,9 @@
 {
-    "name": "mensu-blog",
-    "title": "Mensu Blog",
+    "name": "Jack-btype-blog",
+    "title": "Jack-btype Blog",
     "version": "1.0.0",
-    "homepage": "http://mensu.github.io",
-    "author": "Mensu",
+    "homepage": "http://Jack-btype.github.io",
+    "author": "Jack-btype",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
@@ -13,9 +13,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Mensu/mensu.github.io"
+        "url": "https://github.com/Jack-btype/Jack-btype.github.io"
     },
     "scripts": {
-        
+        "build": "lessc less/mensu-blog.less css/mensu-blog.min.css --autoprefix=\"last 20 versions, >1%\" --clean-css=\"--compatibility=ie7\"; webpack -d",
+        "dev": "jekyll serve"
     }
 }
