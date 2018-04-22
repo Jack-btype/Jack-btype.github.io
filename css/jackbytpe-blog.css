@@ -1,4 +1,4 @@
-/*!
+﻿/*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -332,7 +332,7 @@ pre,
 .intro-header {
   background: no-repeat center center;
   background-color: #ff5e66;
-  background-image: url('../img/background2.jpg');
+  background-image: url('https://raw.githubusercontent.com/Jack-btype/Jack-btype.github.io/master/img/background2.jpg');
   background-attachment: scroll;
   background-size: cover;
   margin-bottom: 0;
