@@ -41,7 +41,7 @@ public:
 };
 ```
 
-![1546186627579](C:\Users\Jack\AppData\Local\Temp\1546186627579.png)
+![leetcode_No1_1](https://raw.githubusercontent.com/Jack-btype/Jack-btype.github.io/master/img/leetcode_No1_1.PNG)
 
 ​	附录：
 
@@ -103,4 +103,4 @@ public:
 
 ​	效果拔群：
 
-![leetcode_No1_2](E:\code\myblog\Jack-btype.github.io\img\leetcode_No1_2.PNG)
+![leetcode_No1_2](https://raw.githubusercontent.com/Jack-btype/Jack-btype.github.io/master/img/leetcode_No1_2.PNG)
