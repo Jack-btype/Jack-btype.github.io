@@ -4,7 +4,7 @@ title: "[Leetcode]No.1 Two sums"
 description: "record of solving program Problems"
 subtitle: "leetcode"
 create-date: 2018-12-31
-update-date: 2018-31-31
+update-date: 2019-01-02
 header-img: ""
 author: "Jack-btype"
 tags:
@@ -14,6 +14,21 @@ tags:
 # [Leetcode]No.1 Two sums
 
 > 2018-12-31
+
+## 0. Problem
+
+Given an array of integers, return **indices** of the two numbers such that they add up to a specific target.
+
+You may assume that each input would have **exactly** one solution, and you may not use the *same* element twice.
+
+**Example:**
+
+```
+Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+```
 
 ## 1. Naive Solution
 
